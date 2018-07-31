@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/easyFlipView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:flipDuration="500"
+        app:flipEnabled="true"
+        app:flipOnTouch="true"
+
+        app:flipType="horizontal">
+
+        <include layout="@layout/back" />
+
+        <include layout="@layout/front" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>
